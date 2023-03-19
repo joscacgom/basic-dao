@@ -1,7 +1,7 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { DeployFunction } from "hardhat-deploy/types";
 import { ethers } from "hardhat";
-import { MIN_DELAY, PROPOSERS, EXECUTORS, ADMIN, VOTING_DELAY, VOTING_PERIOD, QUORUM } from '../hardhat-helper-config';
+import { MIN_DELAY, PROPOSERS, EXECUTORS, VOTING_DELAY, VOTING_PERIOD, QUORUM } from '../hardhat-helper-config';
 
 const deployGovernorContract: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
   const { deployments, getNamedAccounts, network } = hre;
